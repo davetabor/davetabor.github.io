@@ -7,7 +7,7 @@
     
     $newjson = json_encode($json);
     
-    $writeurl = "dutyrosters.json";
+    $writeurl = "lib/dutyrosters.json";
     $file2 = fopen($writeurl,'w');
     fwrite($file2,$newjson);
     fclose($file2);
