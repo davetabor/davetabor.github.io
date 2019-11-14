@@ -251,7 +251,7 @@ function getRoster() {
 // *******
 function getJSON() {
     $.ajax({
-        url: 'getJSON.php',
+        url: 'http://taborvt.com/stellafane/dutyrosters/getJSON.php',
         type: 'GET',
         success: function (data) {
             jsonData = data;
@@ -445,7 +445,7 @@ function addOnClicks() {
 
         $.ajax({
             type: "POST",
-            url: "saveJSON.php",
+            url: "http://taborvt.com/stellafane/dutyrosters/saveJSON.php",
             data: { "jsonDTA": jsonData },
             success: function () {
                 $('#delModal').modal('hide');
@@ -491,7 +491,7 @@ function addOnClicks() {
 
         $.ajax({
             type: "POST",
-            url: "saveJSON.php",
+            url: "http://taborvt.com/stellafane/dutyrosters/    .php",
             data: { "jsonDTA": jsonData },
             success: function () {
                 $('#addModal').modal('hide');
