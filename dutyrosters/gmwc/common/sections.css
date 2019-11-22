@@ -1,0 +1,46 @@
+.section {
+    width: 900px;
+    margin: auto;
+    margin-top: 80px;
+    margin-bottom: 20px;
+    padding: 20px;
+    background-color: rgba(210, 180, 140, .8);
+    border: brown 1px solid;
+    border-radius: 20px;
+    color: black;
+    font-size: 18px;
+}
+
+.section p {
+    text-align: justify;
+}
+
+h3.title {
+    margin: 20px;
+    color: firebrick;
+}
+
+.office {
+    float: none;
+    display: flex;
+    width: 200px;
+    font-weight: bold;
+}
+.officer {
+    float: none;
+    padding: 5px;
+    margin: auto;
+    margin-top: 15px;
+    display: flex;
+    border: 1px brown solid;
+    border-radius: 5px;
+    background-color: burlywood;
+    width: 510px;
+}
+.officerAddr {
+    float: left;
+    width: 300px;
+}
+.subtext {
+    font-size: .7em;
+}

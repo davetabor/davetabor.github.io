@@ -1,0 +1,362 @@
+
+<!DOCTYPE html><html lang="en-us" dir="ltr">
+
+<head>
+<!-- 
+Copyright 2018 Green Mountain Wood Carvers, All Rights Reserved.
+-->
+<title>The Carver's Nook:  Home of the Green Mountain Wood Carvers</title>
+<meta charset="utf-8">
+<meta name="description" content="The Carver's Nook, Home of the Green Mountain Wood Carvers, Stowe, Vermont, USA">
+<meta name="robots" content="index,follow">
+<!-- <script type="text/javascript" src="common/common.js"></script> -->
+<link rel="StyleSheet" href="common/style.css" type="text/css" title="GMWC Common Styles">
+
+<style type="text/css">/*** Homepage Specific Styles ***/
+img { border: none; }
+
+
+/* Little Man Cross Fade (with cross fade) and Page Header */
+#lmcf     { position:absolute; top:0px; left:0px; height:139px; width:100px; margin: 1px; }
+#lmcf img { position:absolute; top:0px; left:0px; height:139px; width:100px;
+	        box-shadow: 5px 5px 5px 0 gray;
+            transition-property: opacity, top, left, width, height;
+            transition-delay:    .00s,   .50s, .50s, .50s,  .50s;
+            transition-duration:  1s,    .50s, .50s, .50s,  .50s;
+}
+#lmcf img#LMpop {
+	position: absolute; top: 50px; left: 50px; 
+	opacity: 0; height: 0px; width: 0px;
+	border: 1px solid gray; border-radius: 15px;
+	box-shadow: 10px 10px 15px 0 #AAA);	
+	z-index: 2;
+}
+a#lmcf:hover img.top   { filter: alpha(opacity = 0); opacity: 0; }
+a#lmcf:hover img#LMpop { opacity: 1; height: 162px; width: 249px; top: 5px; left: 110px; }  
+
+/* --- Menu Bar --- */
+ul#mb {
+	padding-left: 50px; 
+	display: inline-block; 
+	width: 710px;
+	border-top: 1px silver solid; border-left: 1px silver solid; border-radius: 10px;
+	/* margin: 5px 0 10px 0; */
+	box-shadow: 5px 5px 5px 0px gray; 
+	background: #dad2c1; /* Old browsers */
+	/* background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2Y3ZWVkOSIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjUwJSIgc3RvcC1jb2xvcj0iI2RhZDJjMSIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNiZmI4YWEiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+); */
+	background: linear-gradient(#F5DEB3 ,#DEB887 ,#CD853F); /* W3C */
+	z-index: 100;
+}
+ul#mb li {
+	float: left; position: relative;
+	height: 24px; 
+	margin: 0 0 0 6px;
+	text-align: center; font-size: 10.5pt; 
+	border: 1px #888 solid; border-radius: 10px;
+	color: #000; font-weight: bold;
+    text-shadow: 1px 1px 1px #ddd;
+	list-style: none; padding: 0px;
+	border: 1px #dad2c1 solid; 
+}
+ul#mb li a.mb1 { padding-top: 8pt; padding-bottom: 8pt; } /* Single line level 1 anchors */
+ul#mb li a {
+	display: block; 
+	padding: 2px 6px 0 6px;
+	color: black;
+    border-radius: 10px;
+}
+ul#mb li:hover a, ul#mb li.hover a { text-decoration: underline; }
+ul#mb li:hover, ul#mb li.hover {
+	background: #333333;
+	background: linear-gradient( to bottom, lime, #33ffcc );
+	border: 1px gray solid; 
+    box-shadow: 1px 1px 2px 0px gray inset, -1px -1px 2px 0px #ccc inset;
+}
+
+/* level 2 list dropdowm */
+ul#mb ul {
+	visibility: hidden; 
+	margin: 0; padding: 0; width: auto;
+	position: absolute; top: 44px; left: 20px;
+	z-index: 105;
+	border: none; 
+	-webkit-border-radius: 10px;
+	   -moz-border-radius: 10px;
+	     -o-border-radius: 10px;
+	        border-radius: 10px;
+	-webkit-box-shadow: 10px 10px 10px gray;
+	   -moz-box-shadow: 10px 10px 10px gray;
+	     -o-box-shadow: 10px 10px 10px gray;
+	        box-shadow: 10px 10px 10px gray;
+	background: #f0f0f0;
+}
+ul#mb ul.mbleft { left: auto; right: -15px; }
+ul#mb ul.mbnext { left: auto; right: -80px; }
+ul#mb li:hover ul, ul#mb li.hover ul { visibility: visible; }
+ul#mb li ul li {
+	float: none;
+	margin: 0px;
+	padding: 0px;
+	height: auto;
+	min-width: 150px; width: auto;
+	border:none; border-radius: 0px;
+}
+ul#mb li ul li.subitem a {
+	font-size:smaller; padding-left: 2em; padding-top: 0; margin-top: 0;
+}
+ul#mb li:hover ul li, ul#mb li.hover ul li 
+	{ background: none; border: none; box-shadow: none; }
+ul#mb li ul li a {
+	font-size: 10.5pt;
+	color: #333;
+	text-align: left;
+	font-weight: normal;
+	white-space: nowrap;
+	padding: 4px 8px;
+	background: #f0f0f0;
+	border-left: 1px gray solid; border-right: 1px gray solid; 
+    border-radius: 0px;
+	margin-bottom: -1px;
+	text-decoration: none;
+}
+ul#mb li ul li a.hl { font-weight:bold; }
+ul#mb li:hover ul li a, ul#mb li.hover ul li a { text-decoration: none; }
+ul#mb li ul li a:hover { background-color: #ffd0ff; text-decoration: underline; }
+ul#mb ul li:first-child a { 
+    border-top-left-radius: 10px; border-top-right-radius: 10px; border-top: 1px gray solid;
+}
+ul#mb ul li:last-child a { 
+    border-bottom-left-radius: 10px; border-bottom-right-radius: 10px; border-bottom: 1px gray solid;
+}
+
+/* Homepage News Area Styles */
+div#NewsContent { padding: 0px 15px 5px 15px; }
+div#NewsContent h6 { font-size: 12pt; margin: 8px 0 0 0; }
+div#NewsContent p {
+	font-size: 10pt;
+	margin: 0 0 3px 0;
+	text-align: left;
+}
+div#NewsContent span { background-color: #ffCCff; }
+
+/* Homepage Bubble Area Styles */
+div.Bubble {
+	position: relative;
+	border-top: 1px silver solid; border-left: 1px silver solid;
+	border-bottom: 1px gray solid; border-rihgt: 1px gray solid;
+	background: #dad2c1; /* Old browsers */
+		background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2Y3ZWVkOSIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjUwJSIgc3RvcC1jb2xvcj0iI2RhZDJjMSIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNiZmI4YWEiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+		background: linear-gradient(top,  #f7eed9 0%,#dad2c1 50%,#bfb8aa 100%); /* W3C */
+        border-radius: 10px;
+        box-shadow: 5px 5px 5px rgba(1,1,1,0.5), -2px -2px 2px 0px gray inset;
+}
+div.BubbleHdr {
+	background-color: #cbe3d2;
+    border-top-left-radius: 10px; border-top-right-radius: 10px;
+	border-bottom: 1px black solid;
+    box-shadow: 2px 2px 2px 0px #FFDDDD inset, -2px -2px 2px 0px gray inset;
+	padding: 2px 0px 1px 0px;
+	margin-bottom: 3px;
+	height: 25px;
+	text-align: center;
+	font-size: 12pt;
+	letter-spacing: 3pt;
+}
+div.Bubble hr { color: gray !important; background-color: gray !important; }
+div.BubbleHdr a { color: navy; }
+div.BubbleHdr a:hover { color: blue; }
+
+div.BubbleBtm { clear:both; padding: 5px 10px; margin-bottom: 15px;}
+
+div.BubbleFtr {
+    border-bottom-left-radius: 10px; border-bottom-right-radius: 10px;
+    box-shadow: -2px -2px 2px 0px gray inset;
+	padding: 0px 10px;
+	margin-top: 3px;
+	height: 33px;
+	width: 425px;
+	text-align: center;
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+	font-size: 10pt;
+	font-style: italic;
+	color: #404040;
+	text-align: center;
+	position: absolute; bottom: 0px;
+}
+div.BubbleFtr a { color: #404040; font-weight:bold; }
+
+div.BubbleFtr a:hover { color: blue; }
+div.Bubble p {
+	font-size: 9.5pt;
+	margin-top: 4px;
+	margin-bottom: 4px;
+}
+
+div.BubbleNews { width: 445px; height: 355px; margin-bottom: 15px; }
+
+div.BubbleFeature {
+	float: right; width: 295px; height: 355px; margin-bottom: 15px; 
+	// background: #ffceee;
+	// background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2ZmY2VlZSIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNlNWEwY2UiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+); 
+	// background: linear-gradient(top,  #ffceee 0%,#e5a0ce 100%); 
+	text-align:center;
+}
+div.BubbleFeature p { text-align: center; font-size: 11pt; margin-bottom: 8px; }
+
+div.BubbleAd {
+	width: 345px;;
+	height: 200px;
+	margin-bottom: 15px;
+	padding: 5px 10px;
+}
+div.BubbleAd h1 {
+	text-align:center;
+	font-size: 18pt;
+	color: navy;
+	margin: 0;
+    text-shadow: 2px 2px 2px gray;
+}
+div.BubbleAd p { text-align:center; }
+
+div.NewsBubble { 
+	border: 1px silver solid;
+	border-radius: 10px;
+	background-color: #FFFFB0;
+	padding: 2px 10px;
+}
+div.NewsBubble h6 { margin-top: 0px !important; }
+
+</style>
+
+<!-- Begin head.php - Common header items $rps:"../" -->
+<meta name="viewport" content="width=780, user-scalable=yes">
+<link rel="icon" type="image/ico" href="/favicon.ico">
+<link rel="icon" type="image/png" sizes="192x192" href="/littleman192x192.png">
+<link rel="apple-touch-icon" href="/litleman57x57.png">
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-32536478-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+<!-- End head.php -->
+</head>
+<!-- = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = -->
+<body class="gmwcBody" background="images/process_1.jpg" behavior="fixed">
+<div style="width: 260; height: 130; float: left">
+	
+</div>
+<div class="STMbody">
+	<header>
+		<div style='width: 750px; height: 125px; border: solid black 1px; border-radius: 10px; padding: 5px; background-image:url("images/wood-750.jpg"); background background-repeat: no-repeat; text-align: center; box-shadow: 5px 5px 5px 0px gray;'>
+			<div style="float: left;"><img src="images/logoclear.gif" alt="GMWC Logo" /></div>
+			<div style="float: right; font-size: 40pt; font-family: garmond; font-weight: bold; vertical-align: middle; padding-top: 5px; padding-right: 20px">
+				The Carver's&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br/> 
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Nook
+			</div>
+		</div>
+	</header>
+	<nav>
+		<ul id="mb"><!-- Menu Bar -->
+			<li onMouseOver="this.className += ' ' + 'hover';" onMouseOut="this.className = this.className.replace('hover', '');">
+				<a href="membership.html">Membership</a>
+				<ul>
+				<li>Option 1</li>
+				<li>Option 2</li>
+				<li>Option 3</li>
+				</ul>
+			</li>
+			<li onMouseOver="this.className += ' ' + 'hover';" onMouseOut="this.className = this.className.replace('hover', '');">
+				<a href="tm/index.html">GMWC Newsletter</a>
+				<ul>
+				<li>Option 1</li>
+				<li>Option 2</li>
+				<li>Option 3</li>
+			</ul>
+			</li>
+			<li onMouseOver="this.className += ' ' + 'hover';" onMouseOut="this.className = this.className.replace('hover', '');">
+				<a href="history/index.html">Monthly Carve-Ins</a>
+				<ul>
+				<li>Option 1</li>
+				<li>Option 2</li>
+				<li>Option 3</li>
+			</ul>
+			</li>
+			<li onMouseOver="this.className += ' ' + 'hover';" onMouseOut="this.className = this.className.replace('hover', '');">
+				<a href="news/index.html">August Exhibit / Show</a>
+				<ul>
+				<li>Option 1</li>
+				<li>Option 2</li>
+				<li>Option 3</li>
+			</ul>
+			</li>
+		<br/>
+			<li onMouseOver="this.className += ' ' + 'hover';" onMouseOut="this.className = this.className.replace('hover', '');">
+				<a href="observing/index.html">August Class/Seminars</a>
+				<ul>
+				<li>Option 1</li>
+				<li>Option 2</li>
+				<li>Option 3</li>
+			</ul>
+			</li>
+			<li onMouseOver="this.className += ' ' + 'hover';" onMouseOut="this.className = this.className.replace('hover', '');">
+				<a href="misc/index.html">Club Officers</a>
+				<ul>
+				<li><a class="hl" href="misc/index.html">Everything Else Main Page</a></li>
+				<li>Option 1</li>
+				<li>Option 2</li>
+				<li>Option 3</li>
+			</ul>
+			</li>
+			<li onMouseOver="this.className += ' ' + 'hover';" onMouseOut="this.className = this.className.replace('hover', '');">
+				<a href="help/index.html">Member Gallery</a>
+				<ul class="mbnext">
+				<li>Option 1</li>
+				<li>Option 2</li>
+				<li>Option 3</li>
+			</ul>
+			</li>
+			<li onMouseOver="this.className += ' ' + 'hover';" onMouseOut="this.className = this.className.replace('hover', '');">
+				<a href="about/index.html">Woodcarving Links</a>
+				<ul class="mbleft">
+				<li>Option 1</li>
+				<li>Option 2</li>
+				<li>Option 3</li>
+			</ul>
+			</li>
+		</ul>
+	</nav>
+			
+	<iframe src="https://calendar.google.com/calendar/b/1/embed?height=600&amp;wkst=1&amp;bgcolor=%23ffffff&amp;ctz=America%2FNew_York&amp;src=Z3JlZW5tdG53b29kY2FydmVyc0BnbWFpbC5jb20&amp;src=ZW4udXNhI2hvbGlkYXlAZ3JvdXAudi5jYWxlbmRhci5nb29nbGUuY29t&amp;color=%23039BE5&amp;color=%230B8043" style="border-width:0" width="800" height="600" frameborder="0" scrolling="no"></iframe>
+	<footer><!-- Footer -->
+		<!-- Begin footer.php - common footer file $rps:"../" -->
+<div id="php_footer">
+	<hr>
+	<nav><div class="footer_nav">
+		<a class="footer" href="">Membership</a> &#8226;
+		<a class="footer" href="">GMWC Newsletter</a> &#8226;
+		<a class="footer" href="">Monthly Carve-Ins</a> &#8226;
+		<a class="footer" href="">August Exhibit/Show</a> &#8226;
+		<a class="footer" href="">August Class/Seminars</a> &#8226;
+		<a class="footer" href="">Club Officers</a><br>
+	  	<a class="footer" href="">Member Gallery</a> &#8226;
+	  	<a class="footer" href="">Woodcarving Links</a>
+	</div></nav>
+ 	<div class="footer_copy">
+		Copyright &copy; 2019 All Rights Reserved. Green Mountain Woodcarvers<br>
+  		PO Box 1283, Stowe, VT 05156 &emsp; &emsp; <a href="">e-mail GMWC Webmaster</a>
+     </div>
+</div>
+<!-- End footer.php -->
+		<p class="footer">Page last revised on 
+		<!--webbot bot="Timestamp" s-type="EDITED" s-format="%A, %Y-%b-%d %H:%M:%S %Z" startspan -->Thursday, 2019-Sep-19 21:36:54 -0500<!--webbot bot="Timestamp" endspan i-checksum="62830" --></p>
+	</footer>
+</div>
+</body></html>
