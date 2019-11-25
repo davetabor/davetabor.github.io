@@ -237,22 +237,6 @@ function getDowNum(dow) {
 	return dowNum;
 }
 
-
-// *******
-// Get length of name and truncate 2nd, 3rd, etc names to initial if needed
-// *******
-// Validator - function checkNameLength(name) {
-// Validator - if (name.length > 12) {
-// Validator - var parts = name.split(" ", 99);
-// Validator - var newName = parts[0];
-// Validator - for (var p = 1; p < parts.length; p++) {
-// Validator - newName = newName + " " + parts[p].substr(0, 1);
-// Validator - }
-// Validator - name = newName;
-// Validator - }
-// Validator - return name;
-// Validator - }
-
 // *******
 // Read JSON file - via getJSON.php
 // *******

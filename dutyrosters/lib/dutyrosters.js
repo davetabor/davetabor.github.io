@@ -4,6 +4,7 @@
 var jsonData = "";
 
 main();
+
 // *******
 // Main Sequence
 // *******
@@ -621,22 +622,6 @@ function updateSchedBox(id, memberName1, memberName2, members) {
         }
     }
 
-
-    // if (memberName1 !== "" && memberName1 !== undefined) {
-    //     memberName1 = checkNameLength(memberName1);
-    //     innrTxt = '<div class="schedBox" id="nameClick" data-toggle="modal" data-target="#delModal" data-name="' + memberName1 + '" data-id="' + id + '-1">' + properName(memberName1) + '</div>';
-    // } else {
-    //     innrTxt = '<div class="clickHere" data-toggle="modal" data-target="#addModal" data-name="" data-id="' + id + '-A">ADD ME!</div>';
-    // }
-
-    // if (members == 2) {
-    //     if (memberName2 !== "" && memberName2 !== undefined) {
-    //         memberName2 = checkNameLength(memberName2);
-    //         innrTxt = innrTxt + '<div class="schedBox" id="nameClick" data-toggle="modal" data-target="#delModal" data-name="' + memberName2 + '" data-id="' + id + '-2">' + properName(memberName2) + '</div>';
-    //     } else {
-    //         innrTxt = innrTxt + '<div class="clickHere mx-0" data-toggle="modal" data-target="#addModal" data-name="" data-id="' + id + '-B">ADD ME!</div>';
-    //     }
-    // }
     $('#' + id).html(innrTxt);
     addOnClicks();
 }
