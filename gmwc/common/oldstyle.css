@@ -1,0 +1,1279 @@
+/* *** GMWCstyle.css *** */
+ 
+/* --- General Element Styles --- */
+body {
+    color: black;
+    font-weight: normal;
+    font-size: 10pt;
+    font-family: verdana, sans-serif;
+    width: 100%;
+    position: absolute;
+    background: url(../images/chips.jpg) no-repeat fixed 100% 100%;
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+body.gmwcBody {
+    background-size: 100% 100%;
+    background-attachment: fixed;
+}
+
+.responsive {
+    width: 100%;
+    height: auto;
+}
+
+div.GMWCbody {
+    width: 760px;
+    margin: 10px auto;
+    position: relative
+}
+
+/* for outermost <div> in body */
+header,
+div#GMWCheader {
+    height: 135px;
+    clear: both;
+    margin-bottom: 15px;
+}
+
+img#GMWClm {
+    border: 0px;
+    float: left;
+    margin-bottom: 5px;
+    margin-top: 1px;
+    box-shadow: 3px 3px 5px 0px gray;
+}
+
+img#GMWChdr {
+    border: 0px;
+    float: right;
+    margin-bottom: 5px;
+}
+
+img#GMWChdr.hdr2 {
+    border: 1px gray solid;
+    border-radius: 20px;
+    box-shadow: 5px 5px 5px 0px gray;
+    margin-bottom: 10px;
+}
+
+div#GMWCcontent {
+    clear: both;
+}
+
+td.GMWChdrLeft {
+    text-align: left;
+    width: 100px;
+    height: 139px;
+}
+
+td.GMWChdrRight {
+    text-align: right;
+    width: 660px;
+    height: 140px;
+}
+
+/* Topic Banner */
+td.GMWChdrLeft img {
+    border-width: 0px;
+}
+
+td.GMWChdrHR {
+    height: 23px;
+}
+
+acronym {
+    display: inline-block;
+    border: thin gray dotted;
+}
+
+.acronym {
+    display: inline-block;
+    border: thin gray dotted;
+    padding: 0px 2px;
+}
+
+.inline-pix {
+    display: inline-block;
+    border: thin gray dashed;
+}
+
+ol {
+    font: normal 10pt Verdana, sans-serif;
+    color: black;
+    text-align: justify;
+}
+
+ul {
+    font: normal 10pt Verdana, sans-serif;
+    color: black;
+    text-align: justify;
+}
+
+p {
+    font: 10pt normal Verdana, sans-serif;
+    color: black;
+    text-align: justify;
+}
+
+a {
+    font-weight: bold;
+    color: #000088;
+    text-decoration: none;
+}
+
+a:visited,
+a:link {
+    color: #000088;
+    border-color: #000088;
+    text-decoration: none;
+}
+
+a:active,
+a:hover {
+    color: #000088;
+    border-color: #FF70C0;
+    text-decoration: underline;
+}
+
+hr {
+    color: #FF70C0;
+    background-color: #FF70C0;
+    width: 100%;
+    height: 1px;
+    border-width: 0px;
+    clear: both;
+}
+
+h1 {
+    font: bold 24pt Verdana, sans-serif;
+    color: black;
+}
+
+h1.PageTitle {
+    text-align: center;
+    margin: 0px 0px 10px 0px;
+    text-shadow: 6px 6px 9px #FFCCFF, -6px 6px 9px #FFCCFF, 6px -6px 9px #FFCCFF, -6px -6px 9px #FFCCFF, 3px 3px 2px #404040;
+}
+
+h2 {
+    font: bold 18pt Verdana, sans-serif;
+    color: black;
+}
+
+h2.byline {
+    text-align: center;
+    font-size: 12pt;
+    margin-top: 6pt;
+    margin-bottom: 6pt;
+}
+
+h3 {
+    font: bold 14pt Verdana, sans-serif;
+    color: black;
+}
+
+h4 {
+    font: bold 12pt Verdana, sans-serif;
+    color: black;
+}
+
+p.tight {
+    margin-top: 6pt;
+    margin-bottom: 6pt;
+    text-align: left;
+}
+
+p.tightc {
+    margin-top: 6pt;
+    margin-bottom: 6pt;
+    text-align: center;
+}
+
+p.tightj {
+    margin-top: 6pt;
+    margin-bottom: 6pt;
+    text-align: justify;
+}
+
+h4.tight {
+    margin-top: 0pt;
+    margin-bottom: 6pt;
+}
+
+h3.tight {
+    margin-top: 0pt;
+    margin-bottom: 6pt;
+}
+
+h2.tight {
+    margin-top: 0pt;
+    margin-bottom: 6pt;
+}
+
+h1.tight {
+    margin-top: 0pt;
+    margin-bottom: 6pt;
+}
+
+h4.tightc {
+    margin-top: 0pt;
+    margin-bottom: 6pt;
+    text-align: center;
+}
+
+h3.tightc {
+    margin-top: 0pt;
+    margin-bottom: 6pt;
+    text-align: center;
+}
+
+h2.tightc {
+    margin-top: 0pt;
+    margin-bottom: 6pt;
+    text-align: center;
+}
+
+h1.tightc {
+    margin-top: 0pt;
+    margin-bottom: 6pt;
+    text-align: center;
+}
+
+/* --- Common Attributes as classes --- */
+.C {
+    text-align: center
+}
+
+.R {
+    text-align: right
+}
+
+.L {
+    text-align: left
+}
+
+.J {
+    text-align: justify
+}
+
+.CLR {
+    clear: both
+}
+
+.B {
+    font-weight: bold
+}
+
+.bold {
+    font-weight: bold
+}
+
+.I {
+    font-style: italic
+}
+
+.italic {
+    font-style: italic
+}
+
+.bold-italic {
+    font-weight: bold;
+    font-style: italic
+}
+
+.N {
+    font-weight: normal;
+    font-style: normal
+}
+
+.normal {
+    font-weight: normal
+}
+
+.U {
+    text-decoration: underline
+}
+
+.S {
+    text-decoration: line-through
+}
+
+.MT0 {
+    margin-top: 0pt
+}
+
+.MT3 {
+    margin-top: 3pt
+}
+
+.MT6 {
+    margin-top: 6pt
+}
+
+.MT9 {
+    margin-top: 9pt
+}
+
+.MB0 {
+    margin-bottom: 0pt
+}
+
+.MB3 {
+    margin-bottom: 3pt
+}
+
+.MB6 {
+    margin-bottom: 6pt
+}
+
+.MB9 {
+    margin-bottom: 9pt
+}
+
+.MR10 {
+    margin-right: 10px
+}
+
+.ML10 {
+    margin-left: 10px
+}
+
+.smaller {
+    font-size: smaller
+}
+
+.larger {
+    font-size: larger
+}
+
+.xx-small {
+    font-size: xx-small
+}
+
+.BOX {
+    border: 1px black solid
+}
+
+.BC {
+    border-collapse: collapse
+}
+
+.FF {
+    font-family: Verdana, Arial, helvetica, sans-serif
+}
+
+.VT {
+    vertical-align: top
+}
+
+.VM {
+    vertical-align: middle
+}
+
+.VB {
+    vertical-align: bottom
+}
+
+.FR {
+    float: right
+}
+
+.FL {
+    float: left
+}
+
+.YellowHighlight {
+    background-color: #FFFF66
+}
+
+.grayout {
+    color: gray
+}
+
+.red {
+    color: red
+}
+
+mark {
+    background-color: #FFFF66;
+    display: inline;
+}
+
+a.link-off {
+    pointer-events: none;
+    cursor: default;
+    color: #aaaaaa;
+}
+
+a.link-off:after {
+    content: " (Not Ready Yet)";
+    font-size: smaller;
+    font-style: italic;
+}
+
+/* --- Common Item Styles ---*/
+.backto {
+    font-style: italic;
+    text-align: center;
+}
+
+.backtotight {
+    font-style: italic;
+    text-align: center;
+    margin-top: 0px;
+}
+
+.propertyof {
+    font-style: italic;
+    text-align: center;
+    margin-top: 0px;
+    color: #FF70C0;
+    font-size: 8pt;
+}
+
+.boxed {
+    border: solid black 1px;
+}
+
+.byline {
+    text-align: center;
+    font-size: 8pt;
+    margin-top: 6pt;
+    margin-bottom: 6pt;
+}
+
+.quote {
+    font-size: 9pt;
+    font-style: italic;
+    text-align: justify;
+}
+
+.quote-indent {
+    font-size: 9pt;
+    font-style: italic;
+    text-align: justify;
+    margin-left: 5%;
+    margin-right: 5%
+}
+
+.caption {
+    font-size: 9pt;
+    line-height: 11pt;
+    font-weight: bold;
+    color: #123456;
+    text-align: center;
+    margin: 0;
+    display: inline-block;
+}
+
+.caption2 {
+    font-size: 9pt;
+    line-height: 11pt;
+    font-weight: normal;
+    color: #123456;
+    text-align: center;
+    margin: 0;
+    display: inline-block;
+}
+
+figcaption {
+    font-size: 9pt;
+    line-height: 11pt;
+    font-weight: normal;
+    color: #123456;
+    text-align: center;
+    margin: 0;
+    display: block;
+}
+
+.credit {
+    font-size: 7pt;
+    font-weight: normal;
+    color: #808080;
+}
+
+.isbn {
+    font-size: 8pt;
+    font-weight: normal;
+}
+
+.glow {
+    cursor: pointer;
+}
+
+.blueglow {
+    box-shadow: 0px 0px 7px 3px blue !important;
+    border-color: blue !important;
+}
+
+/* --- CSS3 Often Used Items --- */
+.txshdw {
+    text-shadow: 3px 3px 3px gray;
+}
+
+.txshdw2 {
+    text-shadow: 3px 3px 3px silver;
+}
+
+.bxshdw {
+    box-shadow: 3px 3px 5px 0px gray;
+}
+
+.bxrnd {
+    border: 1px gray solid;
+    border-radius: 20px;
+}
+
+.nornd {
+    border-radius: 0px !important;
+}
+
+.bxr {
+    width: 100px;
+    float: right;
+    margin-left: 15px;
+}
+
+.bxc {
+    width: 100px;
+    margin: auto;
+}
+
+.bxl {
+    width: 100px;
+    float: left;
+    margin-right: 15px;
+}
+
+/* --- Topic Bubbles for topic index pages --- */
+div.topicbubble {
+    border: 1px gray solid;
+    border-radius: 20px;
+    background-color: white;
+    padding: 10px 15px 10px 10px;
+    box-shadow: 5px 5px 5px 0px gray;
+    margin-bottom: 15px;
+}
+
+div.topicbubbleL {
+    float: left;
+    width: 345px;
+}
+
+div.topicbubbleR {
+    float: right;
+    width: 345px;
+}
+
+div.topicbubble>h2 {
+    margin-top: 0px;
+    margin-bottom: 3px;
+    text-align: center;
+    text-shadow: 3px 3px 3px silver;
+}
+
+div.topicbubble>h4 {
+    margin-top: 0px;
+    margin-bottom: 3px;
+    text-align: center;
+    font-style: italic;
+    font-size: 10pt;
+}
+
+div.topicbubble p:first-of-type {
+    margin-top: 0;
+}
+
+p.pushdown {
+    clear: both;
+    margin: 0;
+    padding: 0;
+    border: none;
+}
+
+/* --- Inline 'Button' made from HTML elements --- */
+a.button {
+    padding-left: .5ex;
+    padding-right: .5ex;
+    line-height: 166%;
+    border-width: 2px;
+    border-color: navy;
+}
+
+a:visited.button {
+    background-color: #123466;
+    border-style: outset;
+    color: navy;
+}
+
+a:link.button {
+    background-color: #123466;
+    border-style: outset;
+    color: navy;
+}
+
+a:hover.button {
+    background-color: #FF70C0;
+    border-style: outset;
+    color: navy;
+}
+
+a:active.button {
+    background-color: #123466;
+    border-style: inset;
+    color: red;
+}
+
+/* --- Picture and Text Boxes --- */
+div.pix-center {
+    margin: auto;
+    width: 100px;
+    text-align: center;
+    padding: 3px;
+    border: 1px solid #FF70C0;
+    font-size: x-small;
+}
+
+div.pix-right {
+    float: right;
+    width: 100px;
+    margin-left: 15px;
+    text-align: center;
+    padding: 3px;
+    border: 1px solid #FF70C0;
+    font-size: x-small;
+}
+
+div.pix-left {
+    float: left;
+    width: 100px;
+    margin-right: 15px;
+    text-align: center;
+    padding: 3px;
+    border: 1px solid #FF70C0;
+    font-size: x-small;
+}
+
+div.div-center {
+    margin: auto;
+    width: 100px;
+    text-align: center;
+    padding: 0px;
+    border: none;
+    font-size: x-small;
+}
+
+div.div-right {
+    float: right;
+    width: 100px;
+    margin-left: 15px;
+    text-align: center;
+    padding: 0px;
+    border: none;
+    font-size: x-small;
+}
+
+div.div-left {
+    float: left;
+    width: 100px;
+    margin-right: 15px;
+    text-align: center;
+    padding: 0px;
+    border: none;
+    font-size: x-small;
+}
+
+div.pix-left-rnd {
+    float: left;
+    width: 100px;
+    margin-right: 15px;
+    text-align: center;
+    font-size: x-small;
+}
+
+div.pix-left-rnd img {
+    border: 1px black solid;
+    border-radius: 10px;
+    box-shadow: 3px 3px 5px 0px gray;
+}
+
+div.box-center {
+    margin: auto;
+    width: 100px;
+    text-align: center;
+    padding: 7px;
+    border: 1px solid black;
+    background-color: #FFE0FF;
+}
+
+div.box-right {
+    float: right;
+    width: 100px;
+    margin-left: 15px;
+    text-align: center;
+    padding: 7px;
+    border: 1px solid black;
+    background-color: #FFE0FF;
+}
+
+div.box-left {
+    float: left;
+    width: 100px;
+    margin-right: 15px;
+    text-align: center;
+    padding: 7px;
+    border: 1px solid black;
+    background-color: #FFE0FF;
+}
+
+aside {
+    border: 1px gray solid;
+    border-radius: 20px;
+    background-color: #FFCCFF;
+    padding: 7px;
+}
+
+figure {
+    margin: 0;
+}
+
+figure.r {
+    float: right;
+    width: 100px;
+    margin-left: 15px !important;
+    text-align: center;
+    padding: 0;
+    border: none;
+}
+
+figure.l {
+    float: left;
+    width: 100px;
+    margin-right: 15px !important;
+    text-align: center;
+    padding: 0;
+    border: none;
+}
+
+figure.c {
+    width: 300px;
+    margin: auto !important;
+    text-align: center;
+    padding: 0;
+    border: none;
+}
+
+figure.ns img {
+    border: 0;
+    box-shadow: none;
+}
+
+figure img {
+    border: 1px gray solid;
+    box-shadow: 3px 3px 5px 0px gray;
+}
+
+figure.rnd img {
+    border-radius: 20px;
+}
+
+figure.rnd10 img {
+    border-radius: 10px;
+}
+
+/* --- Topic Page Styles --- */
+.a {
+    margin-top: 8pt;
+    font-size: 12pt;
+    font-weight: bold;
+}
+
+li.topic {
+    margin-top: 8pt;
+    font-size: 12pt;
+    font-weight: bold;
+}
+
+h1.topic {
+    text-align: center;
+    font-size: 18pt;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.topicItem {
+    font-size: 12pt;
+    font-weight: bold;
+}
+
+.topicSub {
+    font-size: 11pt;
+    font-weight: bold;
+    font-style: italic;
+}
+
+.topicDesc {
+    font-size: 10pt;
+    font-weight: normal;
+}
+
+.postdate {
+    font-size: 8pt;
+    font-weight: bold;
+    color: #808080;
+}
+
+/* V2012 Topic Styles */
+ul.topiclist li {
+    font-size: 14pt;
+    font-weight: bold;
+    clear: both;
+    margin-top: 12pt;
+}
+
+ul.topiclist p {
+    font-size: 11pt;
+    font-weight: normal;
+    margin-top: 7pt;
+    margin-bottom: 7pt;
+}
+
+ul.topiclist li p:first-child {
+    margin-top: 3pt;
+}
+
+ul.topiclist li ul {
+    margin-top: 0;
+}
+
+ul.topiclist li ul li {
+    font-size: 12pt;
+    margin-top: 2pt;
+    clear: none;
+}
+
+ul.topiclist li ul.normal li {
+    font-size: 11pt;
+    font-weight: normal;
+}
+
+ul.topiclist .postdate {
+    font-size: 8pt;
+    font-weight: bold;
+    color: #808080;
+    display: inline-block;
+    vertical-align: text-top;
+    padding-top: 1.5pt;
+}
+
+/* --- Convention Photo Gallery Styles --- */
+table.gallery6 {
+    margin: auto;
+}
+
+table.gallery6 td {
+    width: 110px;
+    height: 110px;
+    text-align: center;
+    vertical-align: top;
+    padding: 2px;
+    padding-top: 0px;
+}
+
+table.gallery6 img {
+    width: 100px;
+    height: 100px;
+    border-width: 1px;
+}
+
+table.gallery6 td div.thumbcap {
+    font-size: 8pt;
+    color: navy;
+}
+
+/* --- News Navigation Bar */
+div.newsnav {
+    font-size: 10pt;
+    text-align: center;
+    width: 590px;
+    margin: 0px auto 10px auto;
+    background-color: #FFC6FE;
+    border-radius: 10px;
+    box-shadow: 3px 3px 5px 0px gray;
+}
+
+div.newsnav a {
+    text-decoration: none;
+    font-weight: bold;
+}
+
+div.newsnav a:visited {
+    color: navy;
+}
+
+div.newsnav a:link {
+    color: navy;
+}
+
+div.newsnav a:active {
+    color: #FF70C0;
+}
+
+div.newsnav a:hover {
+    color: #FF70C0;
+}
+
+/* --- Event Calendar Styles --- */
+table.cal {
+    background-color: white;
+    border: 2px solid black;
+    border-collapse: collapse;
+}
+
+table.cal TH {
+    font-size: 12pt;
+    border: 1px solid black;
+    background-color: #FFE0FF;
+}
+
+table.cal TD {
+    font-size: 10pt;
+    border: 1px solid black;
+    padding: 1px 3px;
+    text-align: center;
+}
+
+table.cal TD.year {
+    background-color: black;
+    color: white;
+    font-weight: bold;
+    font-size: 12pt;
+    letter-spacing: .8em;
+}
+
+table.cal .public {
+    background-color: #FFFFA0;
+}
+
+/* Public Function Highlight */
+table.cal .mcw {
+    background-color: #D8F0FF;
+}
+
+/* Mirror Class Highlight    */
+table.cal .members {
+    background-color: #FFE0FF;
+}
+
+/* Members Only Highlight    */
+table.cal .special {
+    background-color: #CCFFCC;
+}
+
+/* Special Event Highlight   */
+table.cal .offsite {
+    font-size: 8pt;
+    font-weight: bold;
+    color: #D00000;
+}
+
+/* Location Highlight     */
+table#calcontainer {
+    margin-left: 90px;
+}
+
+div#calkey {
+    border: 1px gray solid;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: white;
+    box-shadow: 5px 5px 5px 0px gray;
+    position: relative;
+    top: 50px
+}
+
+/* --- Mirror Class Page Styles --- */
+table.MCSchedule {
+    margin: auto;
+    background: #CCCC99 none;
+    border: 2px #FF70C0 solid;
+    border-collapse: collapse;
+}
+
+table.MCSchedule TH {
+    color: white;
+    background: black none;
+    font-size: 16pt;
+    border: 1px #888888 solid;
+    padding: 5px;
+    text-align: center;
+}
+
+.hdrnote {
+    font-size: 10pt;
+    font-weight: normal;
+}
+
+table.MCSchedule TD {
+    border: 1px #888888 solid;
+    padding: 6px;
+    vertical-align: top;
+}
+
+table.MCSchedule TD.MCnext {
+    background-color: #FFFF66;
+    font-weight: bold;
+    font-size: 18pt;
+    text-align: center;
+    vertical-align: middle;
+}
+
+table.MCSchedule TD.MCsoon {
+    background-color: #DDDDAA;
+    font-weight: bold;
+    font-size: 16pt;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.MCtitle {
+    font-weight: bold;
+    font-size: 11pt;
+}
+
+.MCdone {
+    font-weight: bold;
+    background-color: #FFFF66
+}
+
+tr.MCxtra {
+    background-color: #B0B080
+}
+
+tr.MCcanceled {
+    background-color: silver;
+}
+
+tr.MCcanceled TD.MCcenter {
+    vertical-align: middle;
+    text-align: center;
+    font-weight: bold;
+}
+
+tr.MClineabove {
+    border-top: 2px black solid;
+}
+
+table.MCStatus {
+    margin: auto;
+    background: #CCCC99 none;
+    border: 2px #FF70C0 solid;
+    border-collapse: collapse;
+}
+
+table.MCStatus TH {
+    color: white;
+    background: black none;
+    font-size: 11pt;
+    padding: 3px;
+    border: 1px #888888 solid;
+}
+
+table.MCStatus TH.sm {
+    font-size: 10pt;
+}
+
+table.MCStatus TD {
+    border: 1px #888888 solid;
+    padding: 0px 3px 0px 3px;
+    text-align: center;
+}
+
+table.MCStatus TD.left {
+    text-align: left;
+}
+
+table.MCinstructor {
+    margin: auto;
+    border-spacing: 5px;
+}
+
+table.MCinstructor TD {
+    border: 1px #FF70C0 solid;
+    padding: 10px;
+    text-align: center;
+    background-color: #CCCC99;
+    vertical-align: top;
+}
+
+table.MCinstructor IMG {
+    border: 1px solid black;
+    margin-bottom: 5px;
+}
+
+table.MCinstructor2 {
+    margin: auto;
+    border-collapse: collapse;
+}
+
+table.MCinstructor2 TD {
+    padding: 10px 30px;
+    text-align: center;
+    vertical-align: top;
+}
+
+/* --- Astrophoto Page Styles --- */
+table.ap {
+    margin: auto;
+    border: 1px #FF70C0 solid;
+    border-collapse: collapse;
+    text-align: right;
+}
+
+table.ap th {
+    border: 1px #FF70C0 solid;
+    padding: 5px;
+    text-align: center;
+}
+
+table.ap td {
+    border: 1px #FF70C0 solid;
+    padding: 5px;
+    vertical-align: top;
+}
+
+table.ap img {
+    float: right;
+}
+
+table.ap td ul {
+    margin-left: 14pt;
+    margin-bottom: 0px;
+    text-align: left;
+}
+
+table.ap2 {
+    margin: auto;
+    border-collapse: collapse;
+    text-align: center;
+}
+
+table.ap2 th {
+    padding: 5px;
+    text-align: center;
+}
+
+table.ap2 td {
+    padding: 5px;
+    vertical-align: top;
+    font-size: 9pt;
+    font-weight: bold;
+    color: #123456;
+}
+
+table.ap2 td img {
+    margin: 3pt 0;
+}
+
+table.ap3 {
+    margin: auto;
+    border-collapse: collapse;
+    text-align: right;
+}
+
+table.ap3 th {
+    padding: 5px;
+    text-align: center;
+}
+
+table.ap3 td {
+    padding: 5px;
+    vertical-align: top;
+}
+
+table.ap3 img {
+    float: right;
+}
+
+table.ap3 td ul {
+    margin: 0;
+    padding: 10px 0 0 1.5em;
+    text-align: left;
+}
+
+.APmember {
+    text-align: center;
+    font-size: 8pt;
+    margin-top: 0px;
+}
+
+.APposted {
+    text-align: center;
+    font-style: italic;
+    font-weight: normal;
+}
+
+/* --- Common Footer Styles --- */
+footer,
+div#GMWCfooter {
+    text-align: center;
+    clear: both;
+}
+
+footer p,
+div#GMWCfooter p {
+    text-align: center;
+    clear: both;
+}
+
+div.footer_nav {
+    text-align: center;
+    line-height: 140%;
+    color: #663300;
+}
+
+div.footer_copy {
+    color: #663300;
+    font-size: 8pt;
+    text-align: center;
+    margin: 0px;
+    padding: 3px 0;
+    line-height: 140%;
+    clear: both;
+}
+
+.footer {
+    color: #663300;
+    font-size: 8pt;
+    text-align: center;
+    margin: 0px;
+}
+
+a:visited.footer,
+a:link.footer {
+    color: #663300;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+a:active.footer,
+a:hover.footer {
+    color: #000066;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+form#footersearch {
+    float: right;
+}
+
+form#footersearchjs {
+    margin: auto;
+}
+
+/* Older javascript based footer with no translation box */
+/* End of GMWCstyle.css */
