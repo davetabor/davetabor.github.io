@@ -83,6 +83,8 @@
             background: linear-gradient(#F5DEB3, #DEB887, #CD853F);
             /* W3C */
             z-index: 100;
+            margin-top: 5px;
+            margin-bottom: 5px;
         }
 
         ul#mb li {
@@ -100,6 +102,10 @@
             list-style: none;
             padding: 0px;
             border: 1px #dad2c1 solid;
+            padding-left: 2px;
+            padding-right: 2px;
+            margin-top: 4px;
+            margin-bottom: 4px;
         }
 
         ul#mb li a.mb1 {
@@ -135,7 +141,7 @@
             padding: 0;
             width: auto;
             position: absolute;
-            top: 44px;
+            /* top: 44px; */
             left: 20px;
             z-index: 105;
             border: none;
@@ -148,6 +154,10 @@
             -o-box-shadow: 10px 10px 10px gray;
             box-shadow: 10px 10px 10px gray;
             background: #f0f0f0;
+            /* background: #333333; */
+            /* background: linear-gradient(to bottom, lime, #33ffcc); */
+            /* border: 1px gray solid; */
+            /* box-shadow: 1px 1px 2px 0px gray inset, -1px -1px 2px 0px #ccc inset; */
         }
 
         ul#mb ul.mbleft {
@@ -215,8 +225,12 @@
         }
 
         ul#mb li ul li a:hover {
-            background-color: #ffd0ff;
-            text-decoration: underline;
+            /* background-color: #ffd0ff; */
+            /* text-decoration: underline; */
+            background: #333333;
+            background: linear-gradient(to bottom, lime, #33ffcc);
+            border: 1px gray solid;
+            box-shadow: 1px 1px 2px 0px gray inset, -1px -1px 2px 0px #ccc inset;
         }
 
         ul#mb ul li:first-child a {
@@ -358,7 +372,7 @@
         }
 
         div.BubbleAd {
-            width: 345px;
+            width: 295px;
             ;
             height: 200px;
             margin-bottom: 15px;
@@ -408,9 +422,9 @@
                 style='width: 750px; height: 125px; border: solid black 1px; border-radius: 10px; padding: 5px; background-image:url("images/wood-750.jpg"); background background-repeat: no-repeat; text-align: center; box-shadow: 5px 5px 5px 0px gray;'>
                 <div style="float: left;"><img src="images/logoclear.gif" alt="GMWC Logo" /></div>
                 <div
-                    style="float: right; font-size: 40pt; font-family: garmond; font-weight: bold; vertical-align: middle; padding-top: 5px; padding-right: 20px">
-                    The Carver's&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br />
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Nook
+                    style="float: right; font-size: 40pt; font-family: garmond; font-weight: bold; vertical-align: middle; padding-top: 5px; padding-right: 60px">
+                    The Carver's&nbsp;<br />
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Nook
                 </div>
             </div>
         </header>
@@ -419,94 +433,64 @@
                 <!-- Menu Bar -->
                 <li onMouseOver="this.className += ' ' + 'hover';"
                     onMouseOut="this.className = this.className.replace('hover', '');">
-                    <a href="membership.html">Membership</a>
+                    <a href="#">Membership</a>
                     <ul>
-                        <li>Option 1</li>
-                        <li>Option 2</li>
-                        <li>Option 3</li>
+                        <li><a href="membership.html">Membership Form</a></li>
+                        <li><a href="membergallery.html">Members Gallery</a></li>
+                        <li><a href="officers.html">Club Officers</a></li>
                     </ul>
                 </li>
                 <li onMouseOver="this.className += ' ' + 'hover';"
                     onMouseOut="this.className = this.className.replace('hover', '');">
-                    <a href="tm/index.html">GMWC Newsletter</a>
+                    <a href="tm/index.html">Newsletter</a>
                     <ul>
-                        <li>Option 1</li>
-                        <li>Option 2</li>
-                        <li>Option 3</li>
+                        <li><a href="#">Option 1</a></li>
+                        <li><a href="#">Option 2</a></li>
+                        <li><a href="#">Option 3</a></li>
                     </ul>
                 </li>
                 <li onMouseOver="this.className += ' ' + 'hover';"
                     onMouseOut="this.className = this.className.replace('hover', '');">
                     <a href="history/index.html">Monthly Carve-Ins</a>
                     <ul>
-                        <li>Option 1</li>
-                        <li>Option 2</li>
-                        <li>Option 3</li>
+                        <li><a href="#">Option 1</a></li>
+                        <li><a href="#">Option 2</a></li>
+                        <li><a href="#">Option 3</a></li>
                     </ul>
                 </li>
                 <li onMouseOver="this.className += ' ' + 'hover';"
                     onMouseOut="this.className = this.className.replace('hover', '');">
-                    <a href="news/index.html">August Exhibit / Show</a>
+                    <a href="news/index.html">August Events</a>
                     <ul>
-                        <li>Option 1</li>
-                        <li>Option 2</li>
-                        <li>Option 3</li>
-                    </ul>
-                </li>
-                <br />
-                <li onMouseOver="this.className += ' ' + 'hover';"
-                    onMouseOut="this.className = this.className.replace('hover', '');">
-                    <a href="observing/index.html">August Class/Seminars</a>
-                    <ul>
-                        <li>Option 1</li>
-                        <li>Option 2</li>
-                        <li>Option 3</li>
+                        <li><a href="#">August Class/Seminar</a></li>
+                        <li><a href="show2019.html">August Show</a></li>
                     </ul>
                 </li>
                 <li onMouseOver="this.className += ' ' + 'hover';"
                     onMouseOut="this.className = this.className.replace('hover', '');">
-                    <a href="misc/index.html">Club Officers</a>
-                    <ul>
-                        <li><a class="hl" href="misc/index.html">Everything Else Main Page</a></li>
-                        <li>Option 1</li>
-                        <li>Option 2</li>
-                        <li>Option 3</li>
-                    </ul>
-                </li>
-                <li onMouseOver="this.className += ' ' + 'hover';"
-                    onMouseOut="this.className = this.className.replace('hover', '');">
-                    <a href="help/index.html">Member Gallery</a>
-                    <ul class="mbnext">
-                        <li>Option 1</li>
-                        <li>Option 2</li>
-                        <li>Option 3</li>
-                    </ul>
-                </li>
-                <li onMouseOver="this.className += ' ' + 'hover';"
-                    onMouseOut="this.className = this.className.replace('hover', '');">
-                    <a href="about/index.html">Woodcarving Links</a>
+                    <a href="about/index.html">Links</a>
                     <ul class="mbleft">
-                        <li>Option 1</li>
-                        <li>Option 2</li>
-                        <li>Option 3</li>
+                        <li><a href="#">Basic Techniques</a></li>
+                        <li><a href="#">Carving Animals</a></li>
+                        <li><a href="#">Carving People</a></li>
+                        <li><a href="#">Relief Carving</a></li>
+                        <li><a href="#">New Carving Plans</a></li>
+                    </ul>
+                </li>
+                <li onMouseOver="this.className += ' ' + 'hover';"
+                    onMouseOut="this.className = this.className.replace('hover', '');">
+                    <a href="https://www.facebook.com/groups/486055891784569/">
+                        <img src="images/facebook.png" alt="Facebook" height="20px" width="20px">
+                    </a>
+                    <ul class="mbleft">
+                        <li><a href="https://www.facebook.com/groups/486055891784569/">Like us!</a></li>
                     </ul>
                 </li>
             </ul>
         </nav>
 
-        <div class="BubbleFeature Bubble z-1 gradient glow"
-            onMouseOut="this.className = this.className.replace('blueglow', '');" onclick="location.href=''"
-            onMouseOver="this.className += ' blueglow';">
-
-            <div class="BubbleHdr B">Special Notice</div>
-
-            <p style="margin:15px 0; font-size: 18pt; font-weight:bold; text-shadow: 2px 2px 3px gray; color: navy;">
-                August Pics Available</p>
-            <a href="membergallery.html" alt="Members Gallery"><img class="bxshdw" alt="The 2019 Project" src="images/carvingdog.jpg" width="280" height="240"></a>
-            <p class="I MT9">Visit here for more information!</p>
-        </div>
-
-        <div class="BubbleNews Bubble z-1 gradient">
+        <!-- Main News Bubble -->
+        <div class="BubbleNews Bubble z-1 gradient FL">
             <!-- News Bubble -->
             <div class="BubbleHdr">
                 <a href="news/index.html">Green Mtn Woodcarvers NEWS</a>
@@ -529,7 +513,7 @@
                             will be open. As always, the carve-in begins around 10:00. One topic
                             will be discussing the our August Class and Show, and as always bring a
                             project to work on.</p>
-                            <h5>Directions:</h5>
+                        <h5>Directions:</h5>
                         <p style="text-align:justify">The directions are fairly easy as there are signs along the
                             highway to direct you. </p>
                         <ul>
@@ -557,25 +541,33 @@
             </div>
         </div>
 
+        <!-- Special Notice Bubble -->
+        <div class="BubbleFeature FR Bubble z-1 gradient glow"
+            onMouseOut="this.className = this.className.replace('blueglow', '');" onclick="location.href=''">
+
+            <div class="BubbleHdr B">Special Notice</div>
+
+            <p style="margin:15px 0; font-size: 18pt; font-weight:bold; text-shadow: 2px 2px 3px gray; color: navy;">
+                August Pics Available</p>
+            <a href="membergallery.html" alt="Members Gallery"><img class="bxshdw" alt="The 2019 Project"
+                    src="images/carvingdog.jpg" width="280" height="240"></a>
+            <p class="I MT9">Visit here for more information!</p>
+        </div>
 
         <!-- Bottom Left Bubble -->
-        <div class="BubbleAd FL Bubble glow z-1 gradient" style="text-align: center"
-            onclick="location.href='tm/dob/index.html'" onMouseOver="this.className += ' ' + 'blueglow';"
-            onMouseOut="this.className = this.className.replace('blueglow', '');">
-            <h1 class="MB3">Start Carving!</h1>
-            <p style="margin: 3px 0;">Beginners guide to<br><b>Your First Project</b> and the <b>Tools Needed to
+        <div class="BubbleFeature FR Bubble z-1 gradient glow"
+            onMouseOut="this.className = this.className.replace('blueglow', '');" onclick="location.href=''">
+
+            <div class="BubbleHdr B">Start Carving</div>
+            <p style="margin: 3px 0;">A guide to<br><b>Find Your First Project</b><br/> and <br/><b>What You Need to
                     Start</b>.</p>
-            <p class="bxrnd bxshdw" style="padding: 4px; margin-left: 90px; width: 160px; background-color:#FFFFa0"><a
-                    href="">Basic Carving Techniques</a></p>
-            <p class="bxrnd bxshdw" style="padding: 4px; margin-left: 90px; width: 160px; background-color:#FFFFa0"><a
-                    href="">Carving Animals</a></p>
-            <p class="bxrnd bxshdw" style="padding: 4px; margin-left: 90px; width: 160px; background-color:#FFFFa0"><a
-                    href="">Carving People</a></p>
-            <p class="bxrnd bxshdw" style="padding: 4px; margin-left: 90px; width: 160px; background-color:#FFFFa0"><a
-                    href="">Relief Carving</a></p>
-            <p class="bxrnd bxshdw" style="padding: 4px; margin-left: 90px; width: 160px; background-color:#FFFFa0"><a
-                    href="">New Carving Plans</a></p>
+            <p class="bxrnd bxshdw carveBtn"><a href="">Basic Carving Techniques</a></p>
+            <p class="bxrnd bxshdw carveBtn"><a href="">Carving Animals</a></p>
+            <p class="bxrnd bxshdw carveBtn"><a href="">Carving People</a></p>
+            <p class="bxrnd bxshdw carveBtn"><a href="">Relief Carving</a></p>
+            <p class="bxrnd bxshdw carveBtn"><a href="">New Carving Plans</a></p>
         </div>
+
 
         <footer>
             <!-- Footer -->

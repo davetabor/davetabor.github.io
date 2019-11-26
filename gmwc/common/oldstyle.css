@@ -36,7 +36,7 @@ header,
 div#GMWCheader {
     height: 135px;
     clear: both;
-    margin-bottom: 15px;
+    /* margin-bottom: 15px; */
 }
 
 img#GMWClm {
@@ -104,6 +104,13 @@ acronym {
     display: inline-block;
     border: thin gray dotted;
     padding: 0px 2px;
+}
+
+.carveBtn {
+    padding: 4px;
+     margin: auto;
+     width: 180px; 
+    background-color:#FFFFa0;
 }
 
 .inline-pix {
