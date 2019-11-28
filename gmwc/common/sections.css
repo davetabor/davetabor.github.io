@@ -15,6 +15,15 @@
     text-align: justify;
 }
 
+.memberForm {
+    padding: 5px;
+    border: rgb(128, 0, 0) solid 1px;
+    border-radius: 15px;
+    background-color: rgb(118, 236, 245);
+    font: bold 2em Arial;
+    box-shadow: 8px 8px 5px 0px black;
+}
+
 h3.title {
     margin: 20px;
     color: firebrick;

@@ -403,6 +403,8 @@
         }
     </style>
 
+    <link rel="stylesheet" href="common/menu.css" type="text/css">
+
     <!-- Begin head.php - Common header items $rps:"../" -->
     <meta name="viewport" content="width=780, user-scalable=yes">
     <!-- <link rel="icon" type="image/ico" href="/favicon.ico"> -->
@@ -413,9 +415,47 @@
 <!-- = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = -->
 
 <body class="GMWCBody">
-    <div style="width: 260; height: 130; float: left">
-
-    </div>
+        <nav id="topNav">
+            <!-- <div id="logo">Your Logo here</div> -->
+    
+            <label for="drop" class="toggle">Menu</label>
+            <input type="checkbox" id="drop" />
+            <ul class="menu">
+                <!-- <li><a href="#">Green Mountain Wood Carvers</a></li> -->
+                <li class="home"><a href="index.html">Home</a></li>
+                <li><a href="ourstory.html">Our Story</a></li>
+                <li><a href="#">Carve-Ins</a></li>
+                <li><a href="#">Newsletter</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Calendar</a></li>
+                <li>
+                    <!-- First Tier Drop Down -->
+                    <label for="drop-1" class="toggle">Events +</label>
+                    <a href="#">Events</a>
+                    <input type="checkbox" id="drop-1" />
+                    <ul>
+                        <li><a href="#">August Seminar / Class</a></li>
+                        <li><a href="show2019.html">August Exhibit / Show</a></li>
+                    </ul>
+    
+                </li>
+                <li>
+    
+                    <!-- First Tier Drop Down -->
+                    <label for="drop-2" class="toggle">Membership +</label>
+                    <a href="#">Membership</a>
+                    <input type="checkbox" id="drop-2" />
+                    <ul>
+                        <li><a href="membership.html">Become A Member</a></li>
+                        <li><a href="membergallery.html">Member Gallery</a></li>
+                        <li><a href="officers.html">Officers</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">News</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    
     <div class="GMWCbody">
         <header>
             <div
@@ -431,9 +471,8 @@
                 </div>
             </div>
         </header>
-        <nav>
+        <!-- <nav>
             <ul id="mb">
-                <!-- Menu Bar -->
                 <li onMouseOver="this.className += ' ' + 'hover';"
                     onMouseOut="this.className = this.className.replace('hover', '');">
                     <a href="#">Membership</a>
@@ -490,7 +529,10 @@
                     </ul>
                 </li>
             </ul>
-        </nav>
+        </nav> -->
+
+    
+
 
         <!-- Main News Bubble -->
         <div class="BubbleNews Bubble z-1 gradient FL">
