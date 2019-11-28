@@ -70,6 +70,7 @@ nav#topNav {
     top: 0;
 	width: 100%;
 	z-index: 1;
+	font: Arial 22px normal;
 }
 
 #logo {
@@ -97,6 +98,9 @@ nav#topNav ul {
 	margin:0;
 	list-style: none;
 	position: relative;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 17px;
+	font-weight: normal;
 	}
 	
 /* Positioning the navigation items inline */
