@@ -49,9 +49,9 @@ img#GMWClm {
 .h5Alert {
     color: red;
     border: red;
-    border-radius: 5px;
+    border-radius: 15px;
     background-color: yellow;
-    width: 50%;
+    width: 75%;
     margin: auto;
     margin-bottom: 12px;
     text-decoration: underline; 
