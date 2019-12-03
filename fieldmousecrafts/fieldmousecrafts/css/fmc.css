@@ -1,0 +1,90 @@
+body {
+    width: 850px;
+    background-color: lightyellow;
+    margin: auto;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.sample {
+    max-height: 200px;
+    border: slateblue 2px solid;
+}
+
+.sampleDiv {
+    background-color: lightgray;
+    border: gray 1px solid;
+    /* margin: auto; */
+    width: 345px;
+    padding: 10px;
+    margin-left: 230px;
+    display: inline-block;
+    border: solid red 1px;
+    border-radius: 10px;
+}
+
+h1 {
+    color: blue;
+}
+
+h3 {
+    color: yellow;
+    background-color: green;
+}
+
+footer {
+    border-top: 1px solid gray;
+    margin-top: 5px;
+    text-align: center;
+}
+
+#logo {
+    height: 200px;
+    border: solid 1px gray;
+    border-radius: 8px;
+}
+
+.etsy {
+    width: 80%;
+    border: solid 1px red;
+    border-radius: 10px;
+    text-align: center;
+    display: flow-root;
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#fefcea+0,f1da36+100;Gold+3D */
+    background: #fefcea;
+    /* Old browsers */
+    background: -moz-linear-gradient(top, #fefcea 0%, #f1da36 100%);
+    /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, #fefcea 0%, #f1da36 100%);
+    /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, #fefcea 0%, #f1da36 100%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fefcea', endColorstr='#f1da36', GradientType=0);
+    /* IE6-9 */
+
+}
+
+.header {
+    height: 200px;
+    padding: 15px;
+    float: left;
+    background-color: lightblue;
+    margin-bottom: 10px;
+}
+
+.welcome {
+    width: 578px;
+    border: solid red 1px;
+    border-right: 0;
+    border-radius: 10px;
+    border-radius: 10px 0 0 10px;
+}
+
+.logo {
+    width: 208px;
+    border: solid red 1px;
+    border-left: 0;
+    border-radius: 0 10px 10px 0;
+}
